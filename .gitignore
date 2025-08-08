@@ -1,4 +1,4 @@
-# CMake-related files
+# --- CMake build artifacts ---
 build/
 CMakeCache.txt
 CMakeFiles/
@@ -12,11 +12,30 @@ CTestTestfile.cmake
 _deps/
 CMakeUserPresets.json
 
-# Visual Studio files
+# --- Visual Studio specific ---
 *.sln
 *.vcxproj*
 .vs/
+*.user
+*.VC.db
+
+# --- Compiled binaries and intermediate files ---
 *.exe
+*.dll
 *.obj
 *.ilk
 *.pdb
+*.lib
+*.exp
+
+# --- Editor-specific and temp files ---
+*~
+*.swp
+*.bak
+*.log
+*.tmp
+*.cache
+
+# --- OS-specific files ---
+.DS_Store
+Thumbs.db
